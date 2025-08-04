@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IndGames</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #000;
+    }
+
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+    }
+
+    header h1,
+    header p,
+    nav a,
+    h2 {
+      font-family: fantasy;
+    }
+
+    nav a {
+      margin: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      margin: 2rem 0;
+    }
+
+    .contenido-centrado {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    article p,
+    article li {
+      font-family: sans-serif;
+    }
+
+    form {
+      margin-top: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .boton-comprar,
+    .boton-enviar {
+      background-color: #4CAF50;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>IndGames</h1>
+    <p>Destinados a la creación de juegos indies</p>
+    <nav>
+      <a href="#juego">Juego</a>
+      <a href="#contactanos">Contactos</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contenido-centrado">
+      <section id="juego">
+        <h2>Nuestro juego</h2>
+        <article>
+          <h3>Empires: entra a un mundo de rol por turnos y estrategia, viaja a un mundo de fantasía</h3>
+          <img src="assets/1.jpg" alt="campo de juego">
+          <p>Prepárate para sumergirte en Empires, el juego de rol que redefinirá tus límites. Crea a tu héroe, elige tu camino y enfréntate a un universo lleno de misterios, traiciones y magia ancestral</p>
+          <ul>
+            <li>Juego de rol</li>
+            <li>Por turnos</li>
+            <li>Multiplayer</li>
+          </ul>
+          <a href="https://wa.me/573228800438" aria-label="Comprar este juego por WhatsApp">
+            <button class="boton-comprar">Comprar ahora</button>
+          </a>
+        </article>
+      </section>
+    </div>
+
+    <section id="contactanos">
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IndGames. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
